@@ -6,7 +6,21 @@
 
 def main():
     ######################
-    # WRITE YOUR CODE HERE
+    add_movie = "y"
+    movie_list = []
+    tickets = 0
+    total = 0
+
+    while add_movie == "y":
+        movie_title = input("Enter the movie title: ")
+        movie_list.append(movie_title)
+        tickets = int(input("Enter the number of tickets: "))
+        total = total + tickets
+        add_movie = input("Would you like to add another movie? Type 'y' if yes: ")
+    ######################
+
+    print("The movies you are going to see are", movie_list)
+    print("The total number of tickets you are going to buy is", total)
     ######################
 
 

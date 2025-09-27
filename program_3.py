@@ -10,7 +10,21 @@
 
 def main():
     ######################
-    # WRITE YOUR CODE HERE
+    number_years = int(input("Enter the number of years: "))
+    total = 0
+
+
+    for years in range(number_years):
+        for months in range(12):
+            inches = int(input("Enter the number of inches of rainfall for this month: "))
+            total = total + inches
+
+    number_months = number_years * 12
+    average_rainfall = total / number_months
+
+    print("Number of months: ", number_months)
+    print("Total inches of rainfall: ", total)
+    print("Average rainfall per month in inches: ", average_rainfall)
     ######################    
 
 
