@@ -7,13 +7,22 @@
 
 def main():
     budget = 0.0
-    difference = 0.0
-    spent = 1.0         #initialize for while loop
-    total = 0.0
+difference = 0.0
+spent = 1.0         #initialize for while loop
+total = 0.0
 
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
+    ###################
+budget = int(input('Enter the amount of money you budgeted for the month: '))
+while spent != 0:
+    spent = int(input("Enter the cost of your expense (enter 0 to end): "))
+    total = total + spent
+
+if total > budget:
+    difference = total - budget
+    print("You are over budget by $", difference)
+else:
+    difference = budget - total
+    print("You are under budget by $", difference)
 
 
 if __name__ == '__main__':
